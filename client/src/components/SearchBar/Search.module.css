@@ -1,0 +1,87 @@
+.searchContainer {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    position: relative; 
+  }
+  
+  .searchFocused {
+    width: 250px;
+  }
+  
+  .searchOpen {
+    width: 250px;
+    transition: width 0.4s cubic-bezier(0.000, 0.795, 0.000, 1.000);
+  }
+  
+  .searchContainer .search:focus:hover {
+    border-bottom: 2px solid black
+  }
+  
+  .searchContainer .search:focus {
+    width: 220px;
+    z-index: 1;
+    border-bottom: 2px solid black;
+    cursor: text;
+  }
+  
+  .searchContainer .search {
+    height: 30px;
+    font-size: 25px;
+    display: inline-block;
+    font-family: "Lato";
+    font-weight: 90;
+    border: none;
+    outline: none;
+    color: #000000;
+    background-color: rgb(221, 221, 255);
+    padding: 3px;
+    padding-left: 30px;
+    width: 10px;
+    position: absolute;
+    top: 0;
+    left: 0; 
+    transition: width 0.4s cubic-bezier(0.000, 0.795, 0.000, 1.000); 
+    cursor: pointer;
+  }
+  
+  .searchContainer .search::placeholder {
+    color: #000000;
+  }
+  
+  .searchContainer .lupa {
+    height: 40px;
+    width: 30px;
+    display: inline-block;
+    border: none;
+    position: absolute;
+    top: 5px;
+    left: 0;
+    z-index: 2;
+    cursor: pointer;
+    background-color: transparent;
+  }
+  
+  .searchContainer.open .lupa {
+    display: none;
+  }
+
+  .resetButton {
+    height: 20px;
+    width: 60px;
+    display: inline-block;
+    color: rgb(244, 244, 244);
+    background-color: #000000;
+    border: 1px solid rgb(255, 252, 252);
+    border-radius: 10px;
+    position: absolute;
+    top: 50px;
+    left: 0px;
+    z-index: 2;
+    cursor: pointer;
+    transition: opacity 0.4s ease;
+  }
+
+  .resetButton:hover {
+    transform: scale(1.2);
+  }

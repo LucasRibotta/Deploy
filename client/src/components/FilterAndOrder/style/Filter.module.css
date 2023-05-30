@@ -1,0 +1,22 @@
+.filterList {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+}
+
+.filterName {
+  color: rgb(255, 255, 255);
+  background-color: black;
+  border: 1px solid white;
+  border-radius: 20px;
+  font-size: 14px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.filterTitle{
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 12px;
+  font-family: 'Segoe UI', Tahoma, Geneva
+}
